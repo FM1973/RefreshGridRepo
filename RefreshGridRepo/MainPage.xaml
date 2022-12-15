@@ -23,8 +23,20 @@
 
             <Button
                 x:Name="TestCase5Btn"
-                Text="Scrollview inside refreshview"
+                Text="Scrollview inside refreshview Android"
                 Clicked="TestCase5Btn_Clicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="TestCase4Btn"
+                Text="Scrollview inside refreshview IOS"
+                Clicked="TestCase4Btn_Clicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="TestCase3Btn"
+                Text="Border Selected IOS"
+                Clicked="TestCase3Btn_Clicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

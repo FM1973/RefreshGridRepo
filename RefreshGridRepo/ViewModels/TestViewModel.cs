@@ -23,6 +23,9 @@ namespace RefreshGridRepo.ViewModels
         [ObservableProperty]
         private bool _isRefreshing;
 
+        [ObservableProperty]
+        private TestEntity _selectedItem;
+
         #region Commands
 
         [RelayCommand]

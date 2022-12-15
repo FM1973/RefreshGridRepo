@@ -26,7 +26,9 @@ public static class MauiProgram
 
 
 		builder.Services.AddTransient<TestPage1>();
-        builder.Services.AddTransient<TestPage2>();
+		builder.Services.AddTransient<TestPage2>();
+        builder.Services.AddTransient<TestPage3>();
+        builder.Services.AddTransient<TestPage4>();
         builder.Services.AddTransient<TestPage5>();
 
         return builder.Build();
