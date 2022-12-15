@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RefreshGridRepo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Button
+                x:Name="TestCase1Btn"
+                Text="Collectionview without Refreshview"
+                Clicked="TestCase1Btn_Clicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="TestCase2Btn"
+                Text="Collectionview inside Refreshview"
+                Clicked="TestCase2Btn_Clicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="TestCase5Btn"
+                Text="Scrollview inside refreshview"
+                Clicked="TestCase5Btn_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

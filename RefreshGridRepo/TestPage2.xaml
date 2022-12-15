@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RefreshGridRepo.TestPage2"
+             Title="TestPage2">
+
+    <VerticalStackLayout HorizontalOptions="Fill" VerticalOptions="StartAndExpand" BackgroundColor="AliceBlue" Padding="20" Spacing="20">
+
+        <Label Text="Collectionview with refreshview"></Label>
+        <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+
+            <CollectionView ItemsSource="{Binding List}" BackgroundColor="Blue">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"></LinearItemsLayout>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BackgroundColor="White" Padding="5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Title}" FontSize="10"></Label>
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </RefreshView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
