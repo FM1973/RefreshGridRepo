@@ -60,6 +60,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="MessagesPage.xaml.cs">
+	    <DependentUpon>MessagesPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="DataTemplates\MessageIn.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DataTemplates\MessageOut.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MessagesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Templates\DataTemplates.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="TestPage3.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -33,5 +33,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync($"{nameof(TestPage5)}");
     }
+
+    private async void MessagesBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"{nameof(MessagesPage)}");
+    }
 }
 

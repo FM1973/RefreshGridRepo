@@ -39,6 +39,12 @@
                 Clicked="TestCase3Btn_Clicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="MessagesBtn"
+                Text="Messages"
+                Clicked="MessagesBtn_Clicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

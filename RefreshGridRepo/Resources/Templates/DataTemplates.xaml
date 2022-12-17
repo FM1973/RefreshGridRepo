@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RefreshGridRepo.Resources.Templates.DataTemplates"
+             xmlns:dataTemplates="clr-namespace:RefreshGridRepo.DataTemplates">
+
+    <DataTemplate x:Key="MessageIn">
+        <dataTemplates:MessageIn/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="MessageOut">
+        <dataTemplates:MessageOut/>
+    </DataTemplate>
+
+    <dataTemplates:MessageDataTemplateSelector x:Key="MessageDataTemplateSelector" MessageIn="{StaticResource MessageIn}" MessageOut="{StaticResource MessageOut}"/>
+
+</ResourceDictionary>
