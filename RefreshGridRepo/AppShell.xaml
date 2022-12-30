@@ -6,9 +6,11 @@
     xmlns:local="clr-namespace:RefreshGridRepo"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+
+    <ShellContent Shell.FlyoutItemIsVisible="False" ContentTemplate="{DataTemplate local:MainPage1}" Route="MainPage1"/>
+    <ShellContent Shell.FlyoutItemIsVisible="False" ContentTemplate="{DataTemplate local:MainPage2}" Route="MainPage2"/>
+    <ShellContent Shell.FlyoutItemIsVisible="False" ContentTemplate="{DataTemplate local:MainPage3}" Route="MainPage3"/>
+    <ShellContent Shell.FlyoutItemIsVisible="False" ContentTemplate="{DataTemplate local:MainPage4}" Route="MainPage4"/>
 
 </Shell>

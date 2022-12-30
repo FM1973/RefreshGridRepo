@@ -45,6 +45,12 @@
                 Clicked="MessagesBtn_Clicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="NavigationBtn"
+                Text="Navigation"
+                Clicked="NavigationBtn_Clicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

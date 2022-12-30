@@ -38,5 +38,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync($"{nameof(MessagesPage)}");
     }
+
+    private async void NavigationBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"//{nameof(MainPage1)}");
+    }
 }
 

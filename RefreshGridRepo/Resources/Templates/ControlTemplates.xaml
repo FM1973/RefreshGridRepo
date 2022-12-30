@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RefreshGridRepo.Resources.Templates.ControlTemplates">
+
+    <ControlTemplate x:Key="MenuPageTemplate">
+
+        <Grid RowDefinitions="*,60" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource White}" Padding="0">
+
+            <ContentPresenter Grid.Row="0" Padding="0,0,0,0" Margin="0" BackgroundColor="{StaticResource White}"/>
+
+
+            <Grid Grid.Row="1" RowDefinitions="60" ColumnDefinitions="*,*,*,*" ColumnSpacing="20" Padding="20,0,20,0">
+
+                <Button Grid.Column="0" Text="Main 1" Command="{TemplateBinding BindingContext.ShowMain1Command}" HorizontalOptions="Fill" VerticalOptions="StartAndExpand"></Button>
+                <Button Grid.Column="1" Text="Main 2" Command="{TemplateBinding BindingContext.ShowMain2Command}" HorizontalOptions="Fill" VerticalOptions="StartAndExpand"></Button>
+                <Button Grid.Column="2" Text="Main 3" Command="{TemplateBinding BindingContext.ShowMain3Command}" HorizontalOptions="Fill" VerticalOptions="StartAndExpand"></Button>
+                <Button Grid.Column="3" Text="Main 4" Command="{TemplateBinding BindingContext.ShowMain4Command}" HorizontalOptions="Fill" VerticalOptions="StartAndExpand"></Button>
+            </Grid>
+
+        </Grid>
+
+    </ControlTemplate>
+
+</ResourceDictionary>
