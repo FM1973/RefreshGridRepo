@@ -43,5 +43,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync($"//{nameof(MainPage1)}");
     }
+
+    private async void TestButtonBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"{nameof(TestPage6)}");
+    }
 }
 

@@ -30,6 +30,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MainPage4ViewModel>();
 		builder.Services.AddTransient<SubPage1ViewModel>();
         builder.Services.AddTransient<SubPage2ViewModel>();
+        builder.Services.AddTransient<TestPage6ViewModel>();
 
 
         builder.Services.AddTransient<TestPage1>();
@@ -37,6 +38,7 @@ public static class MauiProgram
         builder.Services.AddTransient<TestPage3>();
         builder.Services.AddTransient<TestPage4>();
         builder.Services.AddTransient<TestPage5>();
+        builder.Services.AddTransient<TestPage6>();
 
         builder.Services.AddTransient<MessagesPage>();
 

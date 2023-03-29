@@ -51,6 +51,12 @@
                 Clicked="NavigationBtn_Clicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="TestButtonBtn"
+                Text="Test Button at bottom"
+                Clicked="TestButtonBtn_Clicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

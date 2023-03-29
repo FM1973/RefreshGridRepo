@@ -38,6 +38,8 @@ namespace RefreshGridRepo.ViewModels
             IsRefreshing = false;
         }
 
+        
+
         #endregion
 
         private void LoadData()
