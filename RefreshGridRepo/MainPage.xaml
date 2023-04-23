@@ -57,6 +57,12 @@
                 Clicked="TestButtonBtn_Clicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="TestIconsBtn"
+                Text="Test Icons"
+                Clicked="TestIconsBtn_Clicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

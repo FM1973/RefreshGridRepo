@@ -48,5 +48,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync($"{nameof(TestPage6)}");
     }
+
+    private async void TestIconsBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"//{nameof(Icons)}");
+    }
 }
 

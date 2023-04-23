@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i="clr-namespace:RefreshGridRepo"
+             x:Class="RefreshGridRepo.Icons"
+             Title="Icons">
+    <VerticalStackLayout Spacing="10">
+
+        <Image HeightRequest="50">
+            <Image.Source>
+                <FontImageSource Glyph="{x:Static i:Icon.Icon_News}" FontFamily="IconMoon" Color="{StaticResource Black}"></FontImageSource>
+            </Image.Source>
+        </Image>
+
+        <ImageButton HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton.Source>
+                <FontImageSource Glyph="{x:Static i:Icon.Icon_News}" FontFamily="IconMoon" Color="{StaticResource Black}" Size="50"></FontImageSource>
+            </ImageButton.Source>
+        </ImageButton>
+
+        <Button Text="Test" BackgroundColor="White" BorderColor="Black" BorderWidth="1" Margin="10" TextColor="Black">
+            <Button.ImageSource>
+                <FontImageSource Glyph="{x:Static i:Icon.Icon_News}" FontFamily="IconMoon" Color="{StaticResource Black}" Size="50"></FontImageSource>
+            </Button.ImageSource>
+        </Button>
+
+    </VerticalStackLayout>
+</ContentPage>

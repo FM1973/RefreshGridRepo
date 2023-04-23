@@ -16,7 +16,8 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+                fonts.AddFont("icomoon.ttf", "IconMoon");
+            });
 
 #if DEBUG
 		builder.Logging.AddDebug();
@@ -39,6 +40,7 @@ public static class MauiProgram
         builder.Services.AddTransient<TestPage4>();
         builder.Services.AddTransient<TestPage5>();
         builder.Services.AddTransient<TestPage6>();
+        builder.Services.AddTransient<Icons>();
 
         builder.Services.AddTransient<MessagesPage>();
 
