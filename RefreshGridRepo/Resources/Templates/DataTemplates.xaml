@@ -14,4 +14,14 @@
 
     <dataTemplates:MessageDataTemplateSelector x:Key="MessageDataTemplateSelector" MessageIn="{StaticResource MessageIn}" MessageOut="{StaticResource MessageOut}"/>
 
+    <DataTemplate x:Key="ChatIn">
+        <dataTemplates:ChatIn/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ChatOut">
+        <dataTemplates:ChatOut/>
+    </DataTemplate>
+
+    <dataTemplates:ChatDataTemplateSelector x:Key="ChatDataTemplateSelector" ChatIn="{StaticResource ChatIn}" ChatOut="{StaticResource ChatOut}"/>
+
 </ResourceDictionary>

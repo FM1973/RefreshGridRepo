@@ -58,5 +58,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync($"{nameof(GridPaddingPage)}");
     }
+
+    private async void ChatPageBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"{nameof(ChatPage)}");
+    }
 }
 

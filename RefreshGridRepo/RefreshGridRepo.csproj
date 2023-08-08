@@ -118,6 +118,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ChatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DataTemplates\ChatIn.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DataTemplates\ChatOut.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="DataTemplates\MessageIn.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -69,6 +69,12 @@
                 Clicked="GridColumnPageBtn_Clicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="ChatPageBtn"
+                Text="chat sample"
+                Clicked="ChatPageBtn_Clicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

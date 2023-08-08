@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using RefreshGridRepo.Interfaces;
+using RefreshGridRepo.Services;
 using RefreshGridRepo.ViewModels;
 
 namespace RefreshGridRepo;
@@ -23,6 +25,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
+        builder.Services.AddSingleton<IChatService, ChatMockupService>();
+
+
         builder.Services.AddTransient<TestViewModel>();
 		builder.Services.AddTransient<MessagesViewModel>();
 		builder.Services.AddSingleton<MainPage1ViewModel>();
@@ -32,6 +37,8 @@ public static class MauiProgram
 		builder.Services.AddTransient<SubPage1ViewModel>();
         builder.Services.AddTransient<SubPage2ViewModel>();
         builder.Services.AddTransient<TestPage6ViewModel>();
+
+        builder.Services.AddTransient<ChatViewModel>();
 
 
         builder.Services.AddTransient<TestPage1>();
@@ -50,6 +57,8 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MainPage4>();
 		builder.Services.AddTransient<SubPage1>();
         builder.Services.AddTransient<SubPage2>();
+
+        builder.Services.AddTransient<ChatPage>();
 
         return builder.Build();
 	}
