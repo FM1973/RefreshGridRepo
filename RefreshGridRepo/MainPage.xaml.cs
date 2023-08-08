@@ -53,5 +53,10 @@ public partial class MainPage : ContentPage
     {
         await Shell.Current.GoToAsync($"//{nameof(Icons)}");
     }
+
+    private async void GridColumnPageBtn_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync($"{nameof(GridPaddingPage)}");
+    }
 }
 

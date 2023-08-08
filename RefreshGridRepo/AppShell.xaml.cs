@@ -17,5 +17,7 @@ public partial class AppShell : Shell
 
         Routing.RegisterRoute(nameof(SubPage1), typeof(SubPage1));
         Routing.RegisterRoute(nameof(SubPage2), typeof(SubPage2));
+
+        Routing.RegisterRoute(nameof(GridPaddingPage), typeof(GridPaddingPage));
     }
 }

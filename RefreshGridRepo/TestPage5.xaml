@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="RefreshGridRepo.TestPage5"
-             Title="TestPage5" Shell.NavBarIsVisible="False">
+             Title="TestPage5" Shell.NavBarIsVisible="True">
 
     <Page.Behaviors>
         <behaviors:StatusBarBehavior StatusBarColor="Transparent" StatusBarStyle="Default" />

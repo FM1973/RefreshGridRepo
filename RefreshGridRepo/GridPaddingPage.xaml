@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RefreshGridRepo.GridPaddingPage"
+             xmlns:i="clr-namespace:RefreshGridRepo"
+             Title="GridPaddingPage">
+
+    <Grid x:Name="rootGrid" HorizontalOptions="Fill" VerticalOptions="Fill" Margin="0" Padding="50" BackgroundColor="LightBlue">
+        <VerticalStackLayout Spacing="20" BackgroundColor="Blue">
+            <Grid ColumnDefinitions="50,*,50" HorizontalOptions="Fill" VerticalOptions="StartAndExpand"  Margin="0,0,0,24" BackgroundColor="Beige">
+                <Button Grid.Column="0" CornerRadius="25" HeightRequest="50" WidthRequest="50" Padding="0" FontSize="14">
+                    <Button.ImageSource>
+                        <FontImageSource Glyph="{x:Static i:Icon.Icon_News}" FontFamily="IconMoon" Color="White" Size="28"></FontImageSource>
+                    </Button.ImageSource>
+                </Button>
+                <HorizontalStackLayout x:Name="priceContainer" Grid.Column="1" HorizontalOptions="CenterAndExpand" BackgroundColor="Bisque">
+                    <!--<Label VerticalOptions="Center" Text="€" FontFamily="InterSemiBold" FontSize="58" TextColor="Black"></Label>-->
+                    <Entry  x:Name="offer" Text="10" Keyboard="Default" VerticalOptions="CenterAndExpand" FontFamily="InterSemiBold" FontSize="58" 
+                        TextColor="Black" MaxLength="8" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center">
+                    </Entry>
+                </HorizontalStackLayout>
+                
+                <Button Grid.Column="2" CornerRadius="25" HeightRequest="50" WidthRequest="50" Padding="0" FontSize="14" HorizontalOptions="EndAndExpand">
+                    <Button.ImageSource>
+                        <FontImageSource Glyph="{x:Static i:Icon.Icon_News}" FontFamily="IconMoon" Color="White" Size="28"></FontImageSource>
+                    </Button.ImageSource>
+                </Button>
+            </Grid>
+
+            <Button x:Name="btnNoPadding" Text="Padding 0" Clicked="btnNoPadding_Clicked"></Button>
+            <Button x:Name="btnPadding20" Text="Padding 20" Clicked="btnPadding20_Clicked"></Button>
+            <Button x:Name="btnPadding50" Text="Padding 50" Clicked="btnPadding50_Clicked"></Button>
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>

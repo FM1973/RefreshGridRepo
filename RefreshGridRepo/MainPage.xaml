@@ -63,6 +63,12 @@
                 Clicked="TestIconsBtn_Clicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="GridColumnPageBtn"
+                Text="Grid column problem"
+                Clicked="GridColumnPageBtn_Clicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

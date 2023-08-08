@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+
+    <!-- Pin the MAUI version -->
+    <MauiVersion>7.0.92</MauiVersion>
+    
 		<TargetFrameworks>net7.0-android;net7.0-ios</TargetFrameworks>
 		<!--<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>-->
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
@@ -33,6 +37,7 @@
 	<PropertyGroup Condition="'$(TargetFramework)'=='net7.0-ios'">
 	  <CodesignKey>Apple Development: Created via API (7S7L64JA9P)</CodesignKey>
 	  <CodesignProvision>VS: WildCard Development</CodesignProvision>
+	  <ProvisioningType>automatic</ProvisioningType>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
@@ -104,6 +109,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="GridPaddingPage.xaml.cs">
+	    <DependentUpon>GridPaddingPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="MessagesPage.xaml.cs">
 	    <DependentUpon>MessagesPage.xaml</DependentUpon>
 	  </Compile>
@@ -114,6 +122,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="DataTemplates\MessageOut.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GridPaddingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Icons.xaml">

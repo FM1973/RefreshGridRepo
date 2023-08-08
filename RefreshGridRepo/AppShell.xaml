@@ -13,5 +13,5 @@
     <ShellContent Shell.FlyoutItemIsVisible="False" ContentTemplate="{DataTemplate local:MainPage3}" Route="MainPage3"/>
     <ShellContent Shell.FlyoutItemIsVisible="False" ContentTemplate="{DataTemplate local:MainPage4}" Route="MainPage4"/>
     <ShellContent Shell.FlyoutItemIsVisible="False" ContentTemplate="{DataTemplate local:Icons}" Route="Icons"/>
-
+    
 </Shell>

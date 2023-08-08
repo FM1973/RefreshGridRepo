@@ -7,9 +7,9 @@
     <VerticalStackLayout HorizontalOptions="Fill" VerticalOptions="StartAndExpand" BackgroundColor="AliceBlue" Padding="20" Spacing="20">
 
         <Label Text="Collectionview with refreshview"></Label>
-        <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+        <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}" HorizontalOptions="Fill">
 
-            <CollectionView ItemsSource="{Binding List}" BackgroundColor="Blue">
+            <CollectionView ItemsSource="{Binding List}" BackgroundColor="Blue" HorizontalOptions="Fill">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"></LinearItemsLayout>
                 </CollectionView.ItemsLayout>
